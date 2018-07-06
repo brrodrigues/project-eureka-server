@@ -1,0 +1,18 @@
+info:
+  application:
+    version: 1.0
+
+server:
+  port: 8761
+spring:
+  application:
+    name: EUREKA_SERVER
+eureka:
+  instance:
+    #status-page-url-path: ${management.contextPath}/info
+    #health-check-url-path: ${management.contextPath}/health
+    hostname: SERVER_1
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    #service-url: http://server:port/eureka,
